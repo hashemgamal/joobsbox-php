@@ -7,16 +7,16 @@
  * @copyright  Copyright (c) 2009 Joobsbox. (http://www.joobsbox.com)
  * @license	   http://www.joobsbox.com/joobsbox-php-license
  */
- $this->headLink()->appendAlternate($this->baseUrl . '/rss/categorie/' . $this->MakeLink($this->category['Name']), 'application/rss+xml', $this->conf->general->common_title . ' RSS - ' . $this->category['Name']);
+ $this->headLink()->appendAlternate($this->baseUrl . '/rss/category/' . $this->MakeLink($this->category['Name']), 'application/rss+xml', $this->conf->general->common_title . ' RSS - ' . $this->category['Name']);
 ?>
 <?php $this->headTitle()->prepend($this->category['Name']); ?>
 <div class="list">
 	<div class="inner">
 		<div class="toRight">
-			<a href="<?php echo $this->baseUrl;?>/rss/categorie/<?php echo $this->MakeLink($this->category['Name']);?>/">RSS</a>
-			<a href="<?php echo $this->baseUrl;?>/rss/categorie/<?php echo $this->MakeLink($this->category['Name']);?>/"><img src="<?php echo $this->themeImages;?>/icon-rss.gif" alt="RSS" border="0" /></a>
+			<a href="<?php echo $this->baseUrl;?>/rss/category/<?php echo $this->MakeLink($this->category['Name']);?>/">RSS</a>
+			<a href="<?php echo $this->baseUrl;?>/rss/category/<?php echo $this->MakeLink($this->category['Name']);?>/"><img src="<?php echo $this->themeImages;?>/icon-rss.gif" alt="RSS" border="0" /></a>
 		</div>
-		<a href="<?php echo $this->baseUrl;?>/categorie/<?php echo $this->MakeLink($this->category['Name']);?>.html">
+		<a href="<?php echo $this->baseUrl;?>/category/<?php echo $this->MakeLink($this->category['Name']);?>.html">
 			<?php echo $this->category['Name']; ?>
 		</a>
 	</div>
